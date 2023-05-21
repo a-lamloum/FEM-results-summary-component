@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  font-weight: 400 500 700 800;
+}
+/* colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeSpeed;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+p {
+  font-size: 18px;
+}
+:root {
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  /* Gradients */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  background-color: var(--White);
+}
+main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: col;
+}
+
+.card {
+  background-color: white;
+  width: 700px;
+  height: 480px;
+  border-radius: 30px;
+  display: flex;
+  box-shadow: 10px 13px 20px -10px hsl(224, 30%, 27%, 0.1);
+}
+
+section {
+  padding: 40px;
+  width: 350px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .summary {
+    padding: 30px;
+} */
+.summary button {
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  height: 2.9rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+}
+.summary button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+.results {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  color: var(--White);
+  align-items: center;
+}
+
+.score {
+  width: 65%;
+  height: 170px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgba(78, 33, 202, 0.923),
+    hsla(241, 81%, 54%, 0.05)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.results h3 {
+  font-size: 30px;
+}
+
+/* summary section  */
+.summary {
+  display: flex;
+}
+
+.summary h2 {
+  color: var(--Dark-gray-blue);
+}
+
+.summary_list {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.summary_item {
+  height: 50px;
+  background-color: lightgray;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: 700;
+}
+.summary_item_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.red {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  color: var(--Light-red);
+}
+.yellow {
+  background-color: hsl(39, 100%, 56%, 0.05);
+  color: var(--Orangey-yellow);
+}
+.green {
+  background-color: hsl(166, 100%, 37%, 0.05);
+  color: var(--Green-teal);
+}
+.blue {
+  background-color: hsl(234, 85%, 45%, 0.05);
+  color: var(--Cobalt-blue);
+}
+.total_grade {
+  color: hsl(224, 30%, 27%, 0.55);
+  font-weight: 700;
+}
+.cur_score {
+  color: var(--Dark-gray-blue);
+  font-weight: 800;
+}
+.score_total {
+  color: var(--Light-lavender);
+}
+.score_result {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.score_footer {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--Light-lavender);
+  padding: 0 20px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.result_title {
+  color: var(--Light-lavender);
+}
+/* footer  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .card {
+    width: 100%;
+    height: 0;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .results {
+    border-radius: 0px 0 30px 30px;
+    gap: 5px;
+    /* margin-top: 2rem; */
+    height: 350px;
+    margin-top: 0;
+    /* padding: 20px; */
+  }
+  .score {
+    width: 9rem;
+    height: 9rem;
+    margin: 20px 0px;
+  }
+  .result_title {
+    font-size: 18px;
+  }
+  .results h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  section {
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    padding: 2rem;
+  }
+
+  .summary {
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 16px;
+    height: none;
+  }
+  .summary h2 {
+    font-size: 18px;
+  }
+  .summary_list {
+    gap: 20px;
+    font-size: 18px;
+  }
+  .attribution {
+    margin-bottom: 10px;
+  }
+}
