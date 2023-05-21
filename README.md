@@ -14,8 +14,8 @@ Users should be able to:
 ### Screenshot
 
 <div style="text-align: center">
-<img src="assets/images/Screenshot-Desktop.png" height=200px><br><br> 
-<img src="assets/images/Screenshot-Mobile.png" height=300px>
+<img src="assets/images/Screenshot-Desktop.png" width=100%><br><br> 
+<img src="assets/images/Screenshot-Mobile.png" width=50%>
 </div>
 
 ### Links
