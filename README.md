@@ -15,7 +15,7 @@ Users should be able to:
 
 <div style="text-align: center">
 <img src="assets/images/Screenshot-Desktop.png" width=100%><br><br> 
-<img src="assets/images/Screenshot-Mobile.png" width=50%>
+<img src="assets/images/Screenshot-Mobile.png" width=50% style="text-align: center">
 </div>
 
 ### Links
